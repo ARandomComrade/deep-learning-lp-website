@@ -39,7 +39,7 @@
  }
  
  .bg-primary {
-   background-color: #F05F40 !important;
+   background-color: rgb(32, 166, 255) !important;
  }
  
  .bg-dark {
@@ -104,12 +104,12 @@
  
  #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
  #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-   color: #F05F40;
+   color: rgb(32, 166, 255);
  }
  
  #mainNav .navbar-nav > li.nav-item > a.nav-link.active,
  #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
-   color: #F05F40 !important;
+   color: rgb(32, 166, 255) !important;
    background-color: transparent;
  }
  
@@ -145,10 +145,10 @@
      background-color: #fff;
    }
    #mainNav.navbar-shrink .navbar-brand {
-     color: #F05F40;
+     color: rgb(32, 166, 255);
    }
    #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
-     color: #f05f40;
+     color: rgb(32, 166, 255);
    }
    #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
    #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
@@ -156,7 +156,7 @@
    }
    #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
    #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-     color: #F05F40;
+     color: rgb(32, 166, 255);
    }
  }
  
@@ -208,7 +208,7 @@
  
  
  .text-primary {
-   color: #F05F40 !important;
+   color: red !important;
  }
  
  .btn {
@@ -224,13 +224,13 @@
  }
  
  .btn-primary {
-   background-color: #F05F40;
-   border-color: #F05F40;
+   background-color: rgb(32, 166, 255);
+   border-color: red;
  }
  
  .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
    color: #fff;
-   background-color: #ee4b28 !important;
+   background-color: rgb(0, 127, 211) !important;
  }
  
  .btn-primary:active, .btn-primary:focus {
