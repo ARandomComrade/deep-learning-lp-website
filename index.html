@@ -1,143 +1,79 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <title>Deep Learning License Plate Recognition</title>
         <meta charset="utf-8">
-        <title></title>
-        <meta name="ATM" content="">
+        <meta name="description" content="">
+        <meta name="author" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+
         <link rel="stylesheet" href="./css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/main.css">
     </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-   
+    <body id="top">
 
-        <div class="jumbotron pt-5 pb-1">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container">
-            <h1 class="display-5">Deep Learning License Plate Recognition</h1>
-            <p class="lead">CS4850 Weekly Progress Report</p>
-            <hr class="my-2">
-            <p>Kennesaw State University | Fall 2018</p>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="card mt-1 mb-5 border-0">
-                            <h5 class="card-header">Team Members</h5>
-                            <div class="card-body rounded pl-1">
-                                <ul>
-                                    <li>Armando Mercado</li>
-                                    <li>Carlos Lopez</li>
-                                    <li>Daylon Janis</li>
-                                    <li>Georgi Valkov</li>
-                                    <li>Robert Douma</li>
-                                </ul>
-                            </div>
-                    </div>
-                    <div class="card mb-4 border-0">
-                            <h5 class="card-header">Team Meetings</h5>
-                            <div class="card-body rounded">
-                                <h5 class="card-title">November</h5>
-                                <h6>Attendees: 4</h6>
-                                <p class="card-text">Online meeting to discuss remaining tasks and direction.</p>
-                                <hr>
-                                <h5 class="card-title">October 31</h5>
-                                <h6>Attendees: 5</h6>
-                                <p class="card-text">Online meeting to establish remaining tasks and direction.</p>
-                                <hr>
-                                <h5 class="card-title">October 10</h5>
-                                <h6>Attendees: 5</h6>
-                                <p class="card-text">Worked on mid-term presentation.</p>
-                                <hr>
-                                <h5 class="card-title">October 4</h5>
-                                <h6>Attendees: 5</h6>
-                                <p class="card-text">Discussed current progress, complications, technicalities, next steps.</p>
-                          
-                            </div>
-                        </div>
+
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#top">Home</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                    </ul>
                 </div>
-                <div class="col">
-
-
-
-                    <div class="card mt-1 border-0 mb-5">
-                        <h5 class="text-right card-header">Progress Report 9 </h5>
-                        <div class="card-body rounded">
-                            <h5 class="text-right text-muted">November 3 2018</h5>
-                            <hr>
-                            <h5>Tasks Accomplished</h5>
-                            <p class="mb-0">Armando Mercado: Recorded video, worked on project update, gave input. </p>
-                            <p class="mb-0">Carlos Lopez: Gave input, Record video for test data.</p>
-                            <p class="mb-0">Daylon Janis: Sorted and labeled frames of training data.</p>
-                            <p class="mb-0">Georgi Valkov: Wrote prototype of the GUI.</p>
-                            <p class="mb-3">Rob Douma: Labeled images for training data</p>
-                            <h5>Tasks Planned</h5>
-                            <p class="mb-0">Armando Mercado: Record video for test data,develop database schema, make database. </p>
-                            <p class="mb-0">Carlos Lopez: Record video for test data. </p>
-                            <p class="mb-0">Daylon Janis: Record video for test data.</p>
-                            <p class="mb-0">Georgi Valkov: Work on GUI Frontend, work on retraining models</p>
-                            <p class="mb-3">Rob Douma: Work retraining models</p>
-                            <h5>Comments</h5>
-                            <p class="mb-5">We are currently working on collecting training data for the text detection model and writing the last features of the project, like a database and a GUI and starting the poster.
-                        </div>
-                    </div>
-
-
-
-
-                    <div class="card mt-1 border-0 mb-5">
-                        <h5 class="text-right card-header">Progress Report 8 </h5>
-                        <div class="card-body rounded">
-                            <h5 class="text-right text-muted">October 31 2018</h5>
-                            <hr>
-                            <h5>Tasks Accomplished</h5>
-                            <p class="mb-0">Armando Mercado: Wrote project website. </p>
-                            <p class="mb-0">Carlos Lopez: Gave input, Record video for test data.</p>
-                            <p class="mb-0">Daylon Janis: Record video for test data</p>
-                            <p class="mb-0">Georgi Valkov: Record video for test data, package TensorFlow models.</p>
-                            <p class="mb-3">Rob Douma: Recorded video for test data, wrote project website</p>
-                            <h5>Tasks Planned</h5>
-                            <p class="mb-0">Armando Mercado: Record video for test data. </p>
-                            <p class="mb-0">Carlos Lopez: Record video for test data </p>
-                            <p class="mb-0">Daylon Janis: Record video for test data.</p>
-                            <p class="mb-0">Georgi Valkov: Retraining object recognition model using a different configuration file</p>
-                            <p class="mb-3">Rob Douma: Work on TensorFlow model</p>
-                            <h5>Comments</h5>
-                            <p class="mb-5">We are currently working on collecting training data for the text detection model and working on ways to optimize the tensorflow models.  We are also starting planning for a GUI frontend and to write the paper.  </p>
-                        </div>
-                    </div>
-
-
-                    
-                    <!--- new update -->
-                    <div class="card mt-1 border-0 mb-5">
-                        <h5 class="text-right card-header">Progress Report 7 </h5>
-                        <div class="card-body rounded">
-                            <h5 class="text-right text-muted">October 15 2018</h5>
-                            <hr>
-                            <h5>Tasks Accomplished</h5>
-                            <p class="mb-0">Armando Mercado: Give input, prepared for presentation</p>
-                            <p class="mb-0">Carlos Lopez: Give input, prepared for presentation</p>
-                            <p class="mb-0">Daylon Janis: Research, give input, worked on presentation</p>
-                            <p class="mb-0">Georgi Valkov: Give input, prepared for presentation, worked on tensorflow code, collected training data</p>
-                            <p class="mb-3">Rob Douma: Give input, prepared for presentation, collected training data</p>
-                            <h5>Tasks Planned</h5>
-                            <p class="mb-0">Armando Mercado: Mid-term presentation</p>
-                            <p class="mb-0">Carlos Lopez: Mid-term presentation</p>
-                            <p class="mb-0">Daylon Janis: Mid-term presentation</p>
-                            <p class="mb-0">Georgi Valkov: Mid-term presentation</p>
-                            <p class="mb-3">Rob Douma: Mid-term presentation</p>
-                            <h5>Comments</h5>
-                            <p class="mb-5">Currently working on the first stage of our project. We are working on gathering video from the decks for testing and deciding on the approach for the machine learning.  We have successfully gotten the model to recognize license plates in a frame, but we still need to get it to read the text on the plates.  We are preparing to present what we have on monday.</p>
-                        </div>
-                        
-                    </div>
-                </div>
+                
             </div>
-        </div>
-        <script src="./js/bootstrap.min.js"></script>      
+        </nav>
+
+          <header class="masthead text-center text-white d-flex">
+            <div class="container my-auto">
+              <div class="row">
+                <div class="col-lg-12 mx-auto mb-3">
+                  <h1 class="text-uppercase"> <strong>Deep Learning</strong> </h1>
+                  <h1 class="text-uppercase"> <strong>License Plate Recognition</strong> </h1>
+                </div>
+                <div class="col-lg-8 mx-auto">
+                  <h4 class="text-faded mb-5">Powered by Google's Tensorflow machine learning framework</h4>
+                  <a class="btn btn-primary btn-xl mt-5 js-scroll-trigger" href="#about">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </header>
+      
+          <section class="bg-primary" id="about">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                  <h2 class="section-heading text-white">We've got what you need!</h2>
+                  <hr class="light my-4">
+                  <p class="text-faded mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
+                  <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
+                </div>
+              </div>
+            </div>
+          </section>
+   
+        <script src="./js/jquery/jquery.min.js"></script>
+        <script src="./js/bootstrap/bootstrap.min.js"></script>      
+
+        <script src=".js/jquery-easing/jquery.easing.min.js"></script>
+        <script src=".js/scrollreveal/scrollreveal.min.js"></script>
+        <script src=".js/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+        <script src="./js/template.js"></script>
+
     </body>
 </html>
