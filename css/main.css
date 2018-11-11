@@ -192,8 +192,11 @@
      font-size: 4rem;
    }
  }
- 
- 
+
+#about p {
+  font-size:1.15rem;
+} 
+
  
  .text-primary {
    color: red !important;
