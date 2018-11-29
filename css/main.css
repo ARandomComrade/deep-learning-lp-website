@@ -249,6 +249,10 @@
   text-transform: none;
 }
 
+.team-member a {
+  color:#212529;
+}
+
 .team-member p {
   margin-top: 0;
 }
